@@ -1,0 +1,51 @@
+{
+  "name": "cross-platform-cli-template",
+  "version": "0.0.0",
+  "description": "A template for building cross platform CLIs with node.js and Typescript",
+  "main": "dist/index.js",
+  "bin": {
+    "myCLI": "bin/myCLI"
+  },
+  "scripts": {
+    "test": "test",
+    "compile": "tsc",
+    "prestart": "npm run clean && npm run compile",
+    "start": "node ./dist/index.js",
+    "lint": "tslint --fix -c tslint.json './src/*.ts' './src/**/*.ts'",
+    "prebuild": "npm run clean",
+    "build": "npm run compile && pkg . --out-path ./build",
+    "clean": "rimraf ./dist ./build",
+    "watch": "tsc --watch",
+    "postinstall": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devCrossNet/cross-platform-cli-template.git"
+  },
+  "keywords": [
+    "CLI",
+    "template",
+    "node",
+    "typescript",
+    "cross-platform"
+  ],
+  "author": "Johannes Werner <johannes.werner86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devCrossNet/cross-platform-cli-template/issues"
+  },
+  "homepage": "https://github.com/devCrossNet/cross-platform-cli-template#readme",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "commander": "2.17.1",
+    "inquirer": "6.1.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "0.0.42",
+    "@types/node": "10.5.7",
+    "pkg": "4.3.3",
+    "rimraf": "2.6.2",
+    "ts-lint": "4.5.1",
+    "typescript": "3.0.1"
+  }
+}
