@@ -4,9 +4,7 @@
 
 # Development
 
-## Getting started
-
-1. Install Node.js 8.x or higher. Use [nvm](https://github.com/creationix/nvm) or [n](https://github.com/tj/n) to maintain multiple Node.js versions
+1. Install Node.js 8.x or higher.
 2. Install npm version 5.x or higher
 3. Clone the repository `git clone https://github.com/devCrossNet/cross-platform-cli-template.git`
 4. Change directory `cd cross-platform-cli-template`
