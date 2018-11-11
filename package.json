@@ -7,7 +7,7 @@
     "myCLI": "bin/myCLI"
   },
   "scripts": {
-    "test": "test",
+    "test": "not implemented",
     "compile": "tsc",
     "prestart": "npm run clean && npm run compile",
     "start": "node ./dist/index.js",
@@ -42,10 +42,11 @@
   },
   "devDependencies": {
     "@types/inquirer": "0.0.43",
-    "@types/node": "10.11.7",
+    "@types/node": "10.12.5",
+    "cryptiles": "4.1.3",
     "pkg": "4.3.4",
     "rimraf": "2.6.2",
     "ts-lint": "4.5.1",
-    "typescript": "3.1.2"
+    "typescript": "3.1.6"
   }
 }
